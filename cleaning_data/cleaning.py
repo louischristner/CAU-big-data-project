@@ -1,7 +1,7 @@
-from os import closerange
+import csv
 import string
 
-file = open('databienseparer.csv', "r", encoding="utf-8")
+file = open('databienseparer_utf8.csv', "r", encoding="utf-8")
 line = file.readlines() #get the line of the file in the tab line
 tab = [i.split("|") for i in line] #we split to have the row of the csv file independantly
 
