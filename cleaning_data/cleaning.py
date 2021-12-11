@@ -1,3 +1,6 @@
+from os import closerange
+import string
+
 file = open('databienseparer.csv', "r", encoding="utf-8")
 line = file.readlines() #get the line of the file in the tab line
 tab = [i.split("|") for i in line] #we split to have the row of the csv file independantly
@@ -8,9 +11,13 @@ for i in tab:
   #we transform our text in lowercase directly
   critics.append(i[-1].lower())
 
-print(critics)
-
 #Removing punctuation
+# !"#$%&'()*+,-./:;<=>?@[\]^_`{}~ (we don't remove the | because it's the row separator)
+# using the terminal to do it : sed 's/,//g' databienseparer.csv > databienseparer.csv
+
+print(critics[1])
+
+
 #Removal of Stop Word (using predefined libraries)
 #Common word removal (as the name of the game or the names of the characters) ?
 #Using librairie to spelling corrections
