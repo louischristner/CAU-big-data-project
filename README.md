@@ -1,8 +1,12 @@
-# ign_scraping
+# CAU Big Data Project
+
+The model can be found in Preprocessing.ipynb and should be used with Jupyter Notebook.
+
+## ign_scraping
 
 Get IGN reviews through web scraping and generate a new CSV file from metacritic_all_games_1999_2021.csv and the IGN reviews.
 
-## web_scraping
+### web_scraping
 
 First, install packages with:
 ```
@@ -14,7 +18,7 @@ Then, start the process with:
 npm start
 ```
 
-## csv_formater
+### csv_formater
 
 Start the process with:
 ```
